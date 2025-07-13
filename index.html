@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Museum Tour</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+  <!-- 👇 Add input section here -->
+  <div id="welcome-screen" style="text-align: center; padding: 50px;">
+    <h2>Welcome! Please enter your name to view the site</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <button onclick="showSite()">Enter</button>
+    <p id="error-message" style="color: red;"></p>
+  </div>
+ <div id="main-content" style="display: none;">
+    <p style="text-align:center; background-color:#f0f0f0; padding:10px; font-size:14px;">
+  Original template: <a href="https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-templates-for-downloading-mustacchio" target="_blank">Mustacchio Template</a>
+    </p>
+
+	<div id="header">
+		
+  <h1 class="main-title">Tokyo National Museum Tour</h1>
+        </a>
+
+		<ul id="navigation">
+			<li class="selected">
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li>
+				<a href="gallery.html">gallery</a>
+			</li>
+			<li>
+				<a href="blog.html">blog</a>
+			</li>
+			
+		</ul>
+	</div>
+	<div id="body">
+		<div id="featured">
+			<img src="images/aesthetic.jpeg" alt=""width="50px" height="600px">
+			<div style="margin-top: -200px;">
+				<h2>Tokyo National Museum</h2>
+				<span >December, 2024</span>
+				<span>📍Location: Ueno Park</span><br>
+				<br>
+				
+				<a href="about.html" class="more">read more</a>
+			</div>
+		</div>
+		<div class="user-input" style="margin-top: 30px; text-align: center;">
+  
+
+  <p id="greeting" style="font-weight: bold; margin-top: 10px;"></p>
+</div>
+
+		<ul>
+			<li>
+				
+					<img src="images/hellokitty.jpeg" alt=""width="300px" height="300px">
+					
+				
+			</li>
+			<li>
+				
+					<img src="images/oldhouse.jpeg" alt=""width="300px" height="300px">
+					
+				
+			</li>
+			<li>
+				
+				
+				    <img src="images/man.jpeg" alt=""width="300px" height="300px">
+					
+				
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div>
+			<p>Created by Adiba Tanha Tahsin | Student ID: 24229502</p>
+		</div>
+	</div>
+</div>	
+	<script>
+  alert("Welcome Professor! I'm going to share about my tour to the Tokyo National Museum. I hope you would like it.");
+</script>
+
+  <script>
+    function showSite() {
+      var name = document.getElementById("username").value.trim();
+
+      if (name !== "") {
+        document.getElementById("welcome-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+        alert("Welcome, " + name + "! Enjoy the Tokyo National Museum tour.");
+      } else {
+        document.getElementById("error-message").innerText = "Please enter your name to continue.";
+      }
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
